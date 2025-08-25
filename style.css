@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background: #e8ecf3; /* light grayish-blue background */
+  color: #1e293b;
+  line-height: 1.7;
+}
+
+/* Navbar */
+header {
+  background: #334155; /* medium-dark navbar */
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid #475569;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+nav a {
+  color: #f1f5f9;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  background: linear-gradient(135deg, #7c5cff, #21d4fd);
+  color: #ffffff;
+}
+
+/* Page Container */
+.content {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 15px;
+  color: #4f46e5; /* Indigo purple accent */
+}
+h1::before {
+  content: "< ";
+  color: #06b6d4; /* cyan */
+}
+h1::after {
+  content: " />";
+  color: #06b6d4;
+}
+h2 {
+  border-bottom: 2px solid #cbd5e1;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+/* Cards */
+.card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Skills list */
+ul li {
+  margin: 8px 0;
+}
+
+/* Certificates Grid */
+.certs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.certs .card {
+  text-align: center;
+}
+.certs img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-top: 8px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #7c5cff, #21d4fd);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background: #334155;
+  border-top: 2px solid #475569;
+  color: #e2e8f0;
+  font-size: 14px;
+}
